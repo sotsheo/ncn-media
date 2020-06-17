@@ -14,15 +14,13 @@
 	<link href="css/vendor-c/font-awesome.min.css" rel="stylesheet" />
 	<link href="css/vendor-c/style-c.css" rel="stylesheet" />
 	<link href="css/vendor-c/header-footer.css" rel="stylesheet" />
-
 	<link href="css/vendor-c/responsive.css" rel="stylesheet" />
 	<link href="css/vendor-c/thanh_fix.css" rel="stylesheet" />
-	
 	<link href="css/vendor-t/styles.css" rel="stylesheet" />
 	<link href="css/vendor-t/response.css" rel="stylesheet" />
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 </head>
-<body class="home-one " data-spy="scroll" data-target=".mainmenu-area" data-offset="90">
+<body class="home-one page_in" data-spy="scroll" data-target=".mainmenu-area" data-offset="90">
 	<a id="back2Top" title="Back to top" href="#" style="display: block;">➤</a>
 	<div class="preeloader">
 		<div class="preloader-spinner"></div>
@@ -69,23 +67,145 @@
 			</div>
 			<!--END MAINMENU AREA END-->
 		</div>
-
-		<div class="banner_in background_t font-t">
-			<div class="img">
-				<img src="images/banner-top2.png">
-			</div>
-			<div class="content_text">
-				<h2>XÓA BỎ CÁC GIỚI HẠN</h2>
-				<p>NCNmedia.vn là Nền tảng mua bán, giao dịch trực tuyến kênh quảng cáo, hình thức quảng cáo, sản phẩm quảng cáo qua các dịch vụ MUA QUẢNG CÁO, ĐẶT QUẢNG CÁO, TÀI TRỢ, ĐẤU GIÁ ...</p>
-				<strong>NHANH CHÓNG - TIỆN ÍCH - LINH HOẠT - TIẾT KIỆM</strong>
-			</div>
-		</div>
 	</header>
 
 
-	<div class="main_t font-t">
+	<div class="page_account">
+		<div class="menu_account clear_float">
+			<div class="name_ac">
+				<div class="img">
+					<img src="images/qcao.png">
+				</div>
+				<div class="content_text">
+					<h2>Nguyen Van Thanh</h2>
+					<p><a href=""><i class="fa fa-pencil" aria-hidden="true"></i> Sửa hồ sơ</a></p>
+				</div>
+			</div>
+			<div class="menu_ac_main">
+				<ul>
+					<li>
+						<a href="ds_qc.html" >Danh sách bán quảng cáo</a>
+					</li>
+					<li>
+						<a href="ds_dqc.html" >Danh sách nhận đặt quảng cáo</a>
+					</li>
+					<li>
+						<a href="ds_xtt.html" >Danh sách xin tài trợ</a>
+					</li>
+					<li>
+						<a href="ds_dg.html" >Danh sách đấu giá</a>
+					</li>
+					<li>
+						<a href="ds_ttud.html" class="active">Thông tin ưu đãi</a>
+					</li>
+					<li>
+						<a href="ds_tt.html"><i class="fa fa-bell" aria-hidden="true"></i> <br>Thông báo</a>
+					</li>
+				</ul>
+			</div>
+			<div class="create_news">
+				<a href=""><i class="fa fa-pencil" aria-hidden="true"></i>Đăng tin</a>
+			</div>
+		</div>
 		
 	</div>
+
+	<div class="tab_content">
+		
+
+		<!-- thông tin ưu đãi  -->
+		<div class="tab_item active">
+			
+			<div class="container">
+				<div class="box-dvu-qcao text-center tai-tro qcao wow fadeInUp fix_title" >
+					<h3>Thông tin ưu đãi</h3>
+				</div>
+			</div>
+			<div class="container">
+				<div class="form_dt">
+					<form class="clear_float">
+						<div class="group_input_f group_f pdr_15">
+							<label>Chọn dịch vụ</label>
+							<select>
+								<option>Sản phẩm tài trợ</option>
+								<option>Sản phẩm quảng cáo</option>
+							</select>
+						</div>
+
+						<div class="group_input_f group_f pdl_15 pdr_15">
+							<label>Mã sản phẩm</label>
+							<input type="text" name="" placeholder="00000011">
+						</div>
+
+						<div class="group_input_f group_t pdl_15">
+							<label>Thời gian tài trợ</label>
+							<div class="group_flex">
+								<p class="pdr_15">Từ</p>
+								<div class="group_input_f pd_5">
+									<select class="time_start">
+										<option>12:0</option>
+									</select>
+								</div>
+								<div class="group_input_f pd_5">
+									<select class="day_start">
+										<option>12:0</option>
+									</select>
+								</div>
+								<p class="pdr_15">Đến</p>
+								<div class="group_input_f pd_5">
+									<select class="time_start">
+										<option>12:0</option>
+									</select>
+								</div>
+								<div class="group_input_f pd_5">
+									<select class="day_start">
+										<option>12:0</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="group_input_f group_e pdr_15">
+							<label>Tên chương trình</label>
+							<input type="" name="" placeholder="Kỷ năm sinh nhật Bác 130 tuổi">
+						</div>
+
+						<div class="group_input_f group_et  pdl_15">
+							<label>Tải ảnh</label>
+							<div class="file_input">
+								<input type="file" name="" placeholder="Kỷ năm sinh nhật Bác 130 tuổi">
+								<img src="images/photo.png">
+							</div>
+							
+						</div>
+
+						<div class="group_input_f">
+							<label>Nội dung chương trình</label>
+							<textarea placeholder="Nội dung kịch bản"></textarea>
+						</div>
+						<div class="group_input_f group_t pdr_15">
+							<label>Hình thức đề xuất tài trợ</label>
+							<textarea placeholder="Tiền , hiện vật"></textarea>
+						</div>
+						<div class="group_input_f group_t pdl_15">
+							<label>Giá trị</label>
+							<textarea placeholder="100 triệu đ"></textarea>
+						</div>
+						<div class="group_input_f">
+							<label>Quyền lợi nhà tài trợ</label>
+							<textarea placeholder="Nội dung"></textarea>
+						</div>
+						<div class="group_input_f">
+							<button type="submit" class="btn_submit">Đăng tin</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		
+	</div>
+	
 
 	<footer class="footer-area white relative wow fadeInUp">
 		<div class="footer-bottom-area wow fadeInUp">
@@ -183,22 +303,8 @@
 		</div>
 	</div>
 
-	<div class="popup_t active">
-		<div class="content container">
-			<div class="main_content">
-				<div class="text_center">
-					
-				</div>
-				
-			</div>
-			
-			<div class="img">
-				<img src="images/Group2951.png">
-			</div>
-		</div>
-	</div>
-	
-	
+
+
 	<script src="js/vendor/jquery-1.12.4.min.js"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
 	<script src="js/vendor/jquery.easing.1.3.js"></script>

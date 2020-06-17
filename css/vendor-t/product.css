@@ -579,7 +579,7 @@
 .hover-img:hover {
     transform: scale(1.1);
 }
-a:focus, a:hover {
+/*a:focus, a:hover {
     color: #fff;
     text-decoration: none;
-}
+}*/
