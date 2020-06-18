@@ -25,7 +25,7 @@ a {
 a:focus,
 a:hover {
 
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 img {
@@ -44,7 +44,7 @@ img {
     color: #ffffff;
 }
 .search-and-signup-button {
-    padding: 34px 0 34px 34px;
+    padding: 35px 0 20px 0px;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
@@ -149,13 +149,13 @@ img {
   background-repeat: no-repeat;
 }
 .fade-carousel .slides .slide-1 {
-  background-image: url(./images/banner-top.png); 
+  background-image: url(../../images/banner-top.png); 
 }
 .fade-carousel .slides .slide-2 {
-    background-image: url(./images/banner-top2.png);
+    background-image: url(../../images/banner-top2.png);
 }
 .fade-carousel .slides .slide-3 {
-  background-image: url(./images/banner-top.png);
+  background-image: url(../../images/banner-top.png);
 }
 
 @media screen and (max-width: 640px){
@@ -222,8 +222,8 @@ img {
   margin-bottom: 0px;
 }
 .no-padinh{
-  padding-left:0px;
-  padding-right: 0px;
+  padding-left:0px  !important;
+  padding-right: 0px !important;
 }
 .slide-vung-mien{
   position: relative;
@@ -537,6 +537,13 @@ input.searchTerm {
     .best-sale .list-product-best-sale .item-product-best-sale .text-product-best-sale .price .price-market, .product-new .list-product-best-sale .item-product-best-sale .text-product-best-sale .price .price-market, .foods .list-product-best-sale .item-product-best-sale .text-product-best-sale .price .price-market, .product-baby .list-product-best-sale .item-product-best-sale .text-product-best-sale .price .price-market, .product-makeup .list-product-best-sale .item-product-best-sale .text-product-best-sale .price .price-market, .houseware .list-product-best-sale .item-product-best-sale .text-product-best-sale .price .price-market, .health .list-product-best-sale .item-product-best-sale .text-product-best-sale .price .price-market {
         float: left;
     }
+}
+.mg-top-20{
+  margin-top: -70px;
+  margin-bottom: -30px;
+}
+.mg-top-10{
+  margin-top: -20px;
 }
 .text-product-best-sale h4{
 font: 14px/19px Segoe UI;
@@ -883,12 +890,13 @@ i.fa.fa-clock-o{
     background: #efa625;
     position: absolute;
     right: -40px;
-    bottom: -44px;
+    bottom: -45px;
 }
 
 .buy-now{
     width: 100%;
     height: 30px;
+    outline: none;
 }
 .buy-now a:hover{
     background-color:#efa625; 
@@ -903,6 +911,7 @@ i.fa.fa-clock-o{
     height: 100%;
     text-align: center;
     line-height: 30px;
+    outline: none;
 }
 
 
@@ -916,6 +925,7 @@ i.fa.fa-clock-o{
     border-radius: 5px;
     margin-left: 5px;
     border: 1px solid #122f42;
+    outline: none;
 }
 .add-cart a{
     font: 10px/11px Segoe UI;
@@ -923,6 +933,7 @@ i.fa.fa-clock-o{
     color: #34495E;
     display: block;
     margin-top: 5px;
+    outline: none;
 }
 .add-cart img{
     float: left;
@@ -1007,4 +1018,607 @@ i.fa.fa-clock-o{
     margin-right: 20px;
 }
 .text-product-best-sale{
-  padding: 15px 15px;
+  padding: 15px 15px;}
+.modal-header.popup-mb{
+  border-bottom: none;
+  padding: 0 15px;
+}
+.pull-right.top10{
+  margin-top: 10px;
+}
+/*///////////////////// css-popup */
+ul.menu-popup-mb li{
+  list-style-type: none;
+  position: relative;
+}
+ul.menu-popup-mb li a{
+  font:  16px/35px Segoe UI;
+  letter-spacing: 0px;
+  color: #34495E;
+}
+ul.menu-popup-mb li a:hover{
+  color: #EFA625;
+}
+ span.title-mb{
+  font: Bold 25px/36px Segoe UI;
+  color: #34495E;
+}
+ul.menu-popup-mb li a::before{
+  content: "";
+  position: absolute;
+  height: 3px;
+  margin-right: 5px;
+  background-color: red;
+  width: 10px;
+  
+}
+.mov.mov-dky{
+  bottom: 20% !important;
+} 
+.title-popup-dy{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  top: 30%;
+}
+.title-popup-dy h2{
+  font: Bold 24px/32px Segoe UI;
+  letter-spacing: 0px;
+}
+.title-popup-dy h3{
+    text-align: center;
+    font-size: 1.3rem;
+    letter-spacing: 0px;
+    color: #F1F1F1;
+    width: 370px;
+    margin: 0 auto;
+    line-height: normal;
+    font-style: italic;
+    margin-top: 20px;
+}
+.mua-ngay h1{
+  font: 21px Segoe UI;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background: #E9E9E9 0% 0% no-repeat padding-box;
+  color: #34495E;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-left: 3px solid #EFA625;
+  font-weight: bold;
+  font-size: 14px;
+  height: 40px;
+  outline: none;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.glyphicon{
+  font-size: 25px;
+}
+.dropdown-content a{
+  border-left: 3px solid #EFA625;
+}
+img.ic-mn-dropdown{
+    float: right;
+    margin-top: 7px;
+}
+img.ic-mn-dropdown.bt-ic{
+  display: none;
+}
+ .dropbtn:focus img.ic-mn-dropdown.bt-ic{
+  display: block;
+  opacity: 2;
+}
+ .dropbtn:focus img.ic-mn-dropdown{
+  display: none;
+  opacity: -1;
+}
+.dropbtn:hover, .dropbtn:focus {
+  background: #19415B 0% 0% no-repeat padding-box;
+  color: #EFA625;
+}
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  z-index: 1;
+  width: 100%;
+}
+.dropdown-content a {
+  color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+}
+.dropdown-content a:hover {background-color: #ddd}
+
+.show {display:block;}
+
+/*/////////////////////////////////// css trang chu1////////// */
+.breadcrumb-tin ul {
+    float: left;
+    padding: 0px;
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.breadcrumb-tin ul li {
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+}
+.breadcrumb-tin ul li a {
+    font: 14px/19px Segoe UI;
+    letter-spacing: 0px;
+    color: #141414;
+}
+.breadcrumb-tin ul li a:hover{
+    color: #EFA625;
+}
+.list-product-best-sale5 .item-product-best-sale-sile-kh,
+.list-product-best-sale3 .item-product-best-sale-sile-kh{
+  padding: 5px;
+}
+.image-circle {
+  box-shadow: 1px 4px 12px #00000017;
+}
+/* /////////////////////////////////csss dấu giá/////////// */
+.dau-gia .slick-list.draggable {
+  margin: 0;
+}
+/* ////////////////////////////css-dang ky////////////////// */
+.box-dky{
+  padding: 0px 30px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 5px 23px #0000001C;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+.navbar.dang-ky{
+  background-color: #19415B;
+} 
+.box-title-dky{
+  background-color: #EFA625;
+  border-radius: 15px 15px 0px 0px;
+  height: 49px;
+}
+.box-title-dky h2{
+  font: Bold 21px Segoe UI;
+  letter-spacing: 0px;
+  color: #34495E;
+  padding: 5px 0px;
+  margin-bottom: 0px;
+  margin-top: 50px;
+  line-height: 45px;
+}
+.box-desc-ky{
+  background: #19415B 0% 0% no-repeat padding-box;
+  color: #fff;
+  padding: 10px 30px;
+}
+.box-desc-ky p{
+  text-align: left;
+  margin-bottom: 20px;
+  font: Italic 18px Segoe UI;
+  color: #FFFFFF;
+  display: flex;
+}
+img.mg-right{
+  margin-right: 10px;
+  height: 27px;
+}
+.box-desc-ky span{
+  margin-left: 10px;
+}
+ a.hvr-shutter-in-vertical.a-dky{
+    border-radius: 32px;
+    font: Bold 18px/24px Segoe UI;
+    letter-spacing: 0px;
+    color: #19415B;
+    text-align: center;
+    line-height: 30px;
+    padding: 5px 35px;
+    box-shadow: 0px 3px 9px #00000029;
+ }
+ .hvr-shutter-in-vertical.a-dky:before{
+  border-radius: 32px;
+ }
+ .box-dvu-qcao.text-center.tai-tro.qcao.dky.wow.fadeInUp{
+    margin-top: 50px !important;
+    height: 49px;
+    margin-left: 0px;
+    margin-right: 0px;
+ }
+  .box-dvu-qcao.text-center.tai-tro.qcao.dky.wow.fadeInUp h3{
+    font: Bold 18px/24px Segoe UI;
+    line-height: 49px;
+ }
+
+.input-box{
+    margin-bottom: 10px;
+
+}
+.input-box span{
+   display: block;
+   font: Bold 14px Segoe UI;
+  letter-spacing: 0px;
+  color: #141414;
+
+}
+i.star-ero{
+  font-size: 5px;
+  color: red;
+  float: right;
+  margin-bottom: 8px;
+
+}
+.box-right{
+  border-left: 2px solid #EFA625;
+  padding: 0px 30px;
+}
+.input-box:first-child{
+  margin-top: 20px;
+}
+.input-box input{
+    padding: 7.5px 15px;
+    width: 100%;
+    border: 1px solid #cccccc;
+    outline: none;
+}
+.btn-box{
+    text-align: right;
+    margin-top: 30px;
+}
+.btn-box button{
+    padding: 7.5px 15px;
+    border-radius: 2px;
+    background-color: #009999;
+    color: #ffffff;
+    border: none;
+    outline: none;
+}
+.sologan-dky p a{
+  font-weight: bold;
+  color: #0A4883;
+}
+.sologan-dky,.question-tkhoan.text-center{
+  margin: 20px 0px;
+}
+a.hvr-shutter-in-vertical.a-dky.dky{
+  width: 70%;
+}
+.question-tkhoan.text-center a:first-child{
+  font: Regular 14px/19px Segoe UI;
+  letter-spacing: 0px;
+  color: #2E2E2E;
+}
+.question-tkhoan.text-center a:last-child{
+  font: Regular 14px/19px Segoe UI;
+  letter-spacing: 0px;
+  color: #EFA625;
+}
+.bg{
+  position: relative;
+  display: block;
+}
+img.dk1{
+    position: absolute;
+    bottom: 0px;
+    left: -400px;
+    z-index: 0;
+}
+img.dk2{
+    position: absolute;
+    bottom: 0px;
+    left: -145px;
+    z-index: -1;
+}
+img.dk3{
+    position: absolute;
+    bottom: 50px;
+    left: -150px;
+    z-index: 1;
+}
+/* ////////////////////////////css chi tiết sp1///////////////////
+ */
+.icon-cart{
+  width: 5%;
+  margin-bottom: 3px;
+}
+.user-name-ctsp{
+  margin-left: 30px;
+  margin-right: 10px;
+}
+.top-100{
+  margin-top: 90px;
+}
+.col-xs-12.col-sm-12.col-md-6.col-lg-6.col-baner-leff.no-padinh{
+  padding: 0px !important;
+}
+.title-buton h1{
+  width: 50%;
+  background-color: #EFA625;
+  text-align: center;
+  font: Bold 20px Segoe UI;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  padding: 10px 0px;
+  background: #EFA625 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.sp h1{
+  width: 60%;
+}
+.content-sp span:first-child{
+  width: 300px;
+  display: inline-block;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+  border-top: none;
+}
+th.title-sp{
+  color: #fff;
+  font: Bold 14px/19px Segoe UI;
+}
+.box-desc-ctsp{
+  background: #19415B 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+  font: 14px Segoe UI;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
+.oranger{
+  color: #EFA625 !important;
+}
+.boder-bt{
+  border-bottom: 1px solid #EFA625;
+
+}
+.buy-now.buy-ctsp1 a,.add-cart.buy-ctsp1{
+  background-color: #EFA625;
+  font: Bold 14px Segoe UI;
+  line-height: 45px;
+  height: 45px;
+}
+.buy-now.buy-ctsp1 a:hover,.add-cart.buy-ctsp1.dat-lich:hover{
+  background-color: red;
+}
+.add-cart.buy-ctsp1 a{
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 17px;
+}
+.add-cart.buy-ctsp1.add:hover{
+  background-color: #3CBA9C;
+}
+.add-cart.buy-ctsp1 img{
+  width: 16%;
+  margin-left: 20px;
+  margin-top: 12px;
+}
+
+.add-cart.buy-ctsp1.dat-lich a{
+  line-height: 45px;
+  font: Bold 14px Segoe UI;
+  text-align: center;
+  margin-top: 12px;
+}
+.bottom-vt{
+  width: 100%;
+  position: relative;
+
+}
+.title-buton.left{
+  float: left;
+  width: 100%;
+}
+.title-buton.right{
+  float: right;
+   width: 100%;
+}
+.breadcrumb-tin.ctsp.wow.fadeInUp{
+  margin-top: 20px;
+}
+.title-buton.left._50,.title-buton.right._50{
+  width: 50%;
+}
+.title-buton.left._50{
+  padding-right: 10px;
+}
+.title-buton.right._50{
+  padding-left: 10px;
+}
+.title-buton.left._50 h1,.title-buton.right._50 h1{
+  width: 100%;
+}
+.content-sp h5{
+  font: Bold 14px/19px Segoe UI;
+  color: #34495E;
+}
+.box-dvu-qcao.text-center.tai-tro.qcao.ctsp{
+  margin-top: 30px;
+}
+/* ///////////////////////////////////////////////css-gủi yêu caauf1///////////////////// */
+.custom-select {
+  margin-bottom: 20px;
+  position: relative;
+}
+.title-select h1 {
+  font: Bold 14px/19px Segoe UI;
+  letter-spacing: 0px;
+  color: #141414;
+}
+.custom-select select {
+  display: none;
+}
+.select-selected {
+  border: 1px solid #ABABAB;
+  border-radius: 5px;
+}
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #ABABAB transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #ABABAB transparent;
+  top: 7px;
+}
+
+.select-items div,.select-selected {
+  color: black;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+   border: 1px solid #ABABAB;
+   border-radius: 5px;
+}
+
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.textarea{
+  display: block;
+  width: 100%;
+  padding:0px;
+}
+textarea{
+  outline: none;
+}
+.sent-yc,button.bt-save-user{
+  margin: 0 auto;
+  display: block;
+  background: #EFA625 0% 0% no-repeat padding-box;
+  box-shadow: 2px 4px 7px #00000070;
+  padding: 13px 80px;
+  border-radius: 29px;
+  font-size: 1.8rem;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  border: none;
+  margin-bottom: 20px;
+}
+.sent-yc:hover, button.bt-save-user:hover{
+  background: #00d1e1 !important;
+  color: black !important;
+}
+.bg-yeu-cau{
+  position: relative;
+  display: block;
+}
+img.img-bg-yc{
+  position: absolute;
+    bottom: 20px;
+    right: -200px;
+    width: 41%;
+    z-index: -1;
+    display: block;
+}
+
+.bg_alert .bgr.tb {
+    right: 0;
+    bottom: 0;
+    width: 21%;
+    z-index: -2;
+}
+/* /////////////////////////////////////css thong tin nguoi dung/////////// */
+.infor-user{
+  margin-top: 20px;
+}
+a.hvr-shutter-in-vertical.a-dky.dky.user-save{
+  width: auto;
+  color: #fff;
+}
+/* css gio hang */
+.table-user thead  tr th{
+  font: Bold 16px/21px Segoe UI;
+  letter-spacing: 0px;
+  color: #19415B;
+}
+.text-center th,.table-user tr td{
+  text-align: center;
+}
+.text-center tr{
+  background-color: #D5DFE8;
+}
+tr.no-bg{
+  background-color: #fff !important;
+}
+.table-user tr td{
+  color: black !important;
+  padding: 20px 0px;
+}
+tr.no-bg td{
+  padding: 30px 0px !important;
+}
+.checkbox_t{
+  vertical-align: bottom;
+}
+img.img-user{
+  width: 150px;
+  height: auto;
+  margin: 0px 20px;
+  float: left;
+}
+.detai-user{
+  float: left;
+  text-align: left;
+}
+.detai-user p.msp{
+  font: Bold 14px/19px Segoe UI;
+  letter-spacing: 0px;
+  color: #1E1E1E;
+}
+.time-icon-product.cart{
+  color: #1E1E1E;
+}
+._delete,._edit{
+  margin:0px 10px;
+}
+._delete:hover{
+  color: red;
+}
+._edit:hover{
+  color: green;
+}
